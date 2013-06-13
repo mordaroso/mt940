@@ -4,7 +4,7 @@ class TestMt940Abs < Test::Unit::TestCase
 
   def setup
     file_name = File.dirname(__FILE__) + '/fixtures/abs.txt'
-    @transactions = MT940::Base.transactions(file_name)
+    @transactions = MT940::Base.transactions(file_name, MT940::Abs)
     @transaction = @transactions.first
   end
 

@@ -1,7 +1,7 @@
 class MT940::Abs < MT940::Base
 
   def self.determine_bank(*args)
-    self if args[0].match(/9518/)
+    nil
   end
 
   def parse_tag_61(pattern = nil)

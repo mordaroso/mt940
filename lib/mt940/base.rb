@@ -4,12 +4,12 @@ module MT940
 
     attr_accessor :bank
 
-    def self.transactions(file)
-      file  = File.open(file) if file.is_a?(String) 
+    def self.transactions(file, bank_klass = nil)
+      file  = File.open(file) if file.is_a?(String)
       if file.is_a?(File) || file.is_a?(Tempfile)
         first_line  = file.readline
         second_line = file.readline unless file.eof?
-        klass       = determine_bank(first_line, second_line)
+        klass       = bank_klass || determine_bank(first_line, second_line)
         file.rewind
         instance = klass.new(file)
         file.close
@@ -21,9 +21,14 @@ module MT940
 
     def parse
       @tag86 = false
-      @lines.each do |line|
-        @line = line
-        @line.match(/^:(\d{2}F?):/) ? eval('parse_tag_'+ $1) : parse_line
+      @lines.each_with_index do |line, index|
+        begin
+          @line = line
+          @line.match(/^:(\d{2}F?):/) ? eval('parse_tag_'+ $1) : parse_line
+        rescue Exception => e
+          p "Exception at line #{index}: #{line}"
+          raise e
+        end
       end
       @transactions
     end
