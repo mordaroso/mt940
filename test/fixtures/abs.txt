@@ -1,0 +1,41 @@
+:20:2013061300009518
+:25:320.123.456-00
+:28C:1/1
+:60F:C130430CHF1567,02
+:61:1305080508D308,45FMSCNONREF//NONREF
+Belast. E-Banking
+:86:Belast. E-Banking
+Extra Express Transport Logistik AG
+:61:1305130513D489,85FMSCNONREF//NONREF
+Belast. E-Banking
+:86:Belast. E-Banking
+Brau- und Rauchshop GmbH,000550128600001215400353889,CHF 35.20--D
+PD (Schweiz) AG,230726000002826189233355313,CHF 23.50--Fracht AG,
+Faktura-Nr.: 512693,CHF 305.80--IWB,000020419456001006803440002,C
+HF 125.35
+:61:1305210521D750,FMSCNONREF//NONREF
+Belast. E-Banking
+:86:Belast. E-Banking
+Johannes Kaufmann
+:61:1305270527C1388,FMSCNONREF//NONREF
+Postcheckeingang
+:86:Postcheckeingang
+Block 56,Rechnung Nr. 1320001-1,CHF 500.00--Hans Fritz,Rech
+nung Nr. 1310001-1,CHF 138.00--Kaufmann Sam,CHF 750.00
+:61:1305270527D710,FMSCNONREF//NONREF
+Dauerauftrag
+:86:Dauerauftrag
+Herr Thomas Hans und Frau Fritz,000006303857918020000007902
+:61:1305300531C111,8FMSCNONREF//NONREF
+Postcheckeingang
+:86:Postcheckeingang
+Kaufmann Sam,bier jo mai 49 +35??? +20 aus kasse
+:61:1305310531C147,FMSCNONREF//NONREF
+Gutschrift
+:86:Gutschrift
+Muller Miek,(zu viel) Bierkonsum
+:61:1305310531C210,FMSCNONREF//NONREF
+Gutschrift
+:86:Gutschrift
+CARGO GMBH
+:62F:C130531CHF1165,52
